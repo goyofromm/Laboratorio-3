@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Medievalsharp', cursive;
+}
+
+.contiene{
+    max-width: 1400px;
+    height: 300px;
+}
+
+.cabecera{
+    background-image: url("../imagenes/cabecera.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-color: black;
+}
+
+header img{
+    width: 450px;
+    height: 400px;
+    margin-left: 45%;
+    opacity: 2;
+}
+
+nav{
+    float: right;
+    font-size: large;
+    
+}
+
+nav ul{
+    margin-right: 50px;
+}
+
+nav ul li {
+    margin-top: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: #808080;
+    border-bottom: #808080 3px solid;
+}
+
+.desplegable{
+    display: none;      /*MENU DESPLEGABLE*/
+}
+
+.articulo{
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    margin: 100px auto 100px auto;
+    padding: 20px 0;
+    border-bottom: groove 1px black;
+    border-top: groove 1px black;
+}
+
+.articulo h1{
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.articulo small{
+    padding-left: 15px;
+    color: #808080;
+    float: right;
+}
+
+.seccion{
+    display: flex;
+    margin-left: 40px;
+}
+
+.seccion div{
+    width: 50%;
+    margin-top: 40px;
+}
+
+.seccion div img{
+    width: 500px;
+    height: 300px;
+    margin: 0 120px 50px 120px;
+    border-radius: 15px;
+}
+
+.seccion div h3{
+    width: 60%;
+    text-align: justify;
+    padding-top: 60px;
+}
+
+.seccion div{
+    width: 50%;
+}
+
+.seccion2{
+    display: flex;
+    margin-left: 40px;
+}
+
+.seccion2 div{
+    width: 50%;
+}
+
+.seccion2 div img{
+    border-radius: 15px;
+}
+
+.seccion2 div h3{
+    margin: auto;
+    width: 60%;
+    padding-left: 70px;
+    padding-top: 110px;
+    text-align: justify;
+}
+
+.seccion3{
+    width: 75%;
+    margin: auto;
+}
+
+.seccion3 h3{
+    margin-top: 40px;
+}
+
+.pie{
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    padding-left: 500px;
+    margin-top: 25px;
+}
+
+footer a{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer img{
+    width: 50px;
+    margin: 0px 10px;
+    height: 50px;
+}   
+
+.titulos{
+    font-weight: bold;
+    padding: 130px;
+    text-align: center;
+    background-image: url(../imagenes/letreto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Medievalsharp', cursive;
+}
+
+.gale{
+    margin-left: 120px;
+}
+
+.example-image-link img{
+    width: 28%;
+    height: 200px;
+    margin: 10px;
+}
+
+.personajes{
+    padding: 5px;
+}
+
+.personajes p{
+    margin: 10px 5px;
+    
+}
+
+.galeria{
+    width: 75%;
+    height: 30%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.foto img{
+    height: 100%;
+    width: 380px;
+    display: inline-block;
+}
+
+.formulario{
+    text-align: center;
+    float:inline-end ;
+}
+
+.personajes .pjs{
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.personajes .pjs p{
+    width: 50%;
+}
