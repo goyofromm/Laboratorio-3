@@ -25,6 +25,12 @@ header img{
     opacity: 2;
 }
 
+header img:hover{
+    width: 35%;
+    height: 55%;
+    transition: .5;
+}
+
 .contiene nav{
     display: flex;
     font-size: large;
