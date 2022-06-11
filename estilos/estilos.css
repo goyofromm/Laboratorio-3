@@ -5,11 +5,13 @@
 
 body{
     font-family: 'Medievalsharp', cursive;
+    max-width: 1300px;
 }
 
 .contiene{
-    max-width: 1400px;
-    height: 300px;
+    max-width: 1300px;
+    max-height: 300px;
+    width: 100%;
 }
 
 .cabecera{
@@ -29,14 +31,12 @@ header img{
     width: 33%;
     height: 53%;
     transition: all .2s;
-    opacity: 8;
 }
 
 .contiene nav{
     display: flex;
     font-size: large;
     background-color:#000 ;
-    top: 0;
     position: sticky;
     width: 100%;
     box-shadow: 0 4px 3px rgba(0,0,0, .5);
@@ -63,16 +63,12 @@ nav ul li a:hover{
     transition: all .1s;
 }
 
-.desplegable{
-    display: none;      /*MENU DESPLEGABLE*/
-}
-
 .articulo{
     display: flex;
     max-width: 700px;
     width: 100%;
     margin: 3% auto;
-    padding: 2% 0;
+    padding: 2% 1%;
     border-bottom: groove 1px black;
     border-top: groove 1px black;
 }
@@ -90,57 +86,31 @@ nav ul li a:hover{
 
 .seccion{
     display: flex;
-    margin-left: 5%;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .seccion div{
-    width: 50%;
-    margin-top: 3%;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .seccion div img{
-    width: 75%;
-    height: 85%;
-    margin: 0 5% 5% 20%;
-    border-radius: 5px;
+    width: 50%;
+}
+
+.seccion .jon img{
+    height: 500px;
+    width: 45%;
 }
 
 .seccion div h3{
-    width: 60%;
-    text-align: justify;
-    padding-top: 8%;
-}
-
-.seccion div{
     width: 50%;
-}
-
-.seccion2{
-    display: flex;
-    margin-left: 5%;
-}
-
-.seccion2 div{
-    width: 50%;
-}
-
-.seccion2 div img{
-    border-radius: 5px;
-    height: 80%;
-    width: 55%;
-}
-
-.seccion2 div h3{
-    margin: auto;
-    width: 60%;
-    padding-left: 15%;
-    padding-top: 20%;
-    text-align: justify;
-}
-
-.seccion3{
-    width: 75%;
-    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .pie{
@@ -188,6 +158,11 @@ footer img{
     margin: 10px;
 }
 
+.example-image-link img:hover{
+    transition: 1s;
+    border-radius: 50px;
+}
+
 .personajes{
     padding: 5px;
 }
@@ -224,4 +199,83 @@ footer img{
 
 .personajes .pjs p{
     width: 50%;
+}
+
+.icon{
+     display: none;
+ }
+ 
+            /*RESPONSIVE*/
+ @media screen and (max-width:480px) {   
+.icon {display: flex; width: 100%; color: white; justify-content: flex-end; margin: 5px;}
+.icon:hover{color: #808080;}
+nav ul {
+    display: none;    
+}
+nav.responsive ul {
+    display: block;    
+}
+nav.responsive ul li {
+    display: block;             /*MENU HAMBURGUESA*/
+    text-align: center;
+    padding: 0.5rem;
+}    
+nav.responsive ul li a {
+    padding-right: 0;    
+}
+.contiene{
+    max-width: 480px;       /*ARREGLAR IMAGEN CABECERA*/
+    max-height: 150px;
+}
+header img{
+    margin-left: 10%;
+}
+.articulo{
+    max-width: 480px;
+    width: 90%;
+    margin: 15px auto 0;
+}
+.articulo h1{
+    width: 100%;
+    margin: auto;
+}
+.articulo small{
+    margin-right: 5%;
+}
+.seccion{
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion div img{
+    width: 90%;
+    height: 85%;
+    margin: auto;
+}
+
+.seccion div h3{
+    width: 90%;
+    
+}
+
+.pie{
+    display: flex;
+    margin-top: 2%;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 }
