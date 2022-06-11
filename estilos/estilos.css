@@ -225,12 +225,3 @@ footer img{
 .personajes .pjs p{
     width: 50%;
 }
-
-.icon{
-    display: none;
-}
-
-@media screen and (max-width:480px) {
-nav ul { display: none; }
-.icon { float: right; display: block; }
-}
