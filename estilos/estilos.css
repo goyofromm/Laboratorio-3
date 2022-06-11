@@ -160,7 +160,11 @@ footer img{
     width: 50px;
     margin: 0px 10px;
     height: 50px;
-}   
+}  
+
+.pie a img:hover{
+    box-shadow: 0 4px 3px rgba(0,0,0, .5);
+}
 
 .titulos{
     font-weight: bold;
