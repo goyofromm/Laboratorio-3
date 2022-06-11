@@ -26,9 +26,9 @@ header img{
 }
 
 .contiene .cabecera a img:hover{
-    width: 35%;
-    height: 55%;
-    transition: .5;
+    width: 33%;
+    height: 53%;
+    transition: 1;
 }
 
 .contiene nav{
