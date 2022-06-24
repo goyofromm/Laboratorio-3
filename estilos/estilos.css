@@ -290,6 +290,10 @@ footer img{
  @media screen and (max-width:480px) {   
 .icon {display: flex; width: 100%; color: white; justify-content: flex-end; margin: 5px;}
 .icon:hover{color: #808080;}
+nav{
+    display: flex;
+    flex-direction: column ;
+}
 nav ul {
     display: none;    
 }
