@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/lightbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="contiene">
+        <header class= "cabecera">        
+            <a href="index.html"><img src="imagenes/logogot2.png" alt="logo got"></a>
+        </header>
+        <nav id="navegador">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <ul>
+                <li class="lista"><a href="index.html">Home</a></li>
+                <li class="lista"><a href="personajes.html" id="pj">Personajes</a></li>
+                <li class="lista"><a href="galeria.html">Galeria</a></li>
+                <li class="lista"><a href="quiz.html">Quiz</a></li>
+                <li class="lista"><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li class="lista"><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="nos">
+        <div>
+            <h2>¿Quienes somos?</h2>
+            <p>Somos la comunidad de fanaticos de la saga Game of Thrones Nº1 en Argentina. Contamos con mas de
+                5000 miembros a lo largo y ancho del pais, y llevamos a cabo peñas y exposiciones regularmente
+                todos los años, donde se realizan skectch de momentos memorables de la serie, asi como tambien se 
+                exponen galerias de arte de artistas independientes, se despliega una feria de venta de articulos de
+                la serie, y se proyecta en pantalla grande un capitulo a eleccion de la gente que asiste.
+            </p>
+        </div>
+        <div>
+            <h2>¿Por que lo hacemos?</h2>
+            <p>Porque somos amantes de la saga, e incentivamos activamente a que la gente vea la serie, y la disfrute
+                tanto como nosotros. <br>
+                Anualmente se lleva a cabo una exposicion a nivel mundial en Dublin, Irlanda, donde asisten mas de 30.000
+                fanaticos de GoT de todo el mundo. Nosotors soñamos con tener la posibilidad de ir algun dia, y esperamos
+                contar con tu ayuda para lograrlo.
+            </p>
+        </div>
+    </section>
+    <footer class="pie">
+        <a href=""><img src="imagenes/instagram.png" alt="instagram"></a>
+        <a href=""><img src="imagenes/twitter.png" alt="twitter"></a>
+        <a href=""><img src="imagenes/facebook.png" alt="facebook"></a>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("navegador");
+            if (x.className === "") {
+                x.className += "responsive";
+            } 
+            else {
+                x.className = "barratop";
+            }
+        }
+    </script>
+</body>
+</html>

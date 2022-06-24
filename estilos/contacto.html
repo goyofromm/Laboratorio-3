@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/lightbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="contiene">
+        <header class= "cabecera">        
+            <a href="index.html"><img src="imagenes/logogot2.png" alt="logo got"></a>
+        </header>
+        <nav id="navegador">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <ul>
+                <li class="lista"><a href="index.html">Home</a></li>
+                <li class="lista"><a href="personajes.html" id="pj">Personajes</a></li>
+                <li class="lista"><a href="galeria.html">Galeria</a></li>
+                <li class="lista"><a href="quiz.html">Quiz</a></li>
+                <li class="lista"><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li class="lista"><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <h1 class="titulos">Formulario de contacto</h1>
+    <div class="formulario">
+        <form>
+            <h4>Ingrese sus datos de contacto, y nos comunicaremos pronto con usted.</h4>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"/><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido"/><br>
+            <label for="mail">E-Mail:</label>
+            <input type="text" id="mail"/><br>
+            <label for="mensaje">Mensaje: </label><br>
+            <input type="text" id="mensaje" class="msj"/><br>
+            <input type="submit" value="Enviar" class="boton">
+        </form>
+    </div>
+    <footer class="pie">
+        <a href=""><img src="imagenes/instagram.png" alt="instagram"></a>
+        <a href=""><img src="imagenes/twitter.png" alt="twitter"></a>
+        <a href=""><img src="imagenes/facebook.png" alt="facebook"></a>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("navegador");
+            if (x.className === "") {
+                x.className += "responsive";
+            } 
+            else {
+                x.className = "barratop";
+            }
+        }
+    </script>
+</body>
+
+</html>

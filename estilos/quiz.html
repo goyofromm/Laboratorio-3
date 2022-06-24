@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/lightbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="contiene">
+        <header class= "cabecera">        
+            <a href="index.html"><img src="imagenes/logogot2.png" alt="logo got"></a>
+        </header>
+        <nav id="navegador">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <ul>
+                <li class="lista"><a href="index.html">Home</a></li>
+                <li class="lista"><a href="personajes.html" id="pj">Personajes</a></li>
+                <li class="lista"><a href="galeria.html">Galeria</a></li>
+                <li class="lista"><a href="quiz.html">Quiz</a></li>
+                <li class="lista"><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li class="lista"><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <article class="qui">
+        <form action="#" method="post">
+            <div>
+                <h2>¿Como se llama el lobo de Jon Snow?</h2>
+                <label for="ghost">Ghost</label>
+                <input type="radio" name="lobo" id="ghost" value="ghost">
+                <label for="summer">Summer</label>
+                <input type="radio" name="lobo" id="summer" value="summer">
+                <label for="wind">Grey Wind</label>
+                <input type="radio" name="lobo" id="wind" value="grey-wind">
+            </div>
+            <div>
+                <h2>¿Quien orquestó la <i>boda roja</i>?</h2>
+                <label for="daario">Daario Naharis</label>
+                <input type="radio" name="boda" id="daario" value="daario">
+                <label for="cercei">Cercei Lannister</label>
+                <input type="radio" name="boda" id="cercei" value="cercei">
+                <label for="walder">Walder Frey</label>
+                <input type="radio" name="boda" id="walder" value="walder">
+            </div>
+            <div>
+                <h2>¿Como se llaman los dragones de <i>Daenerys</i>?</h2>
+                <label for="rigar">Rigar, Visirelon y Dhargon</label>
+                <input type="radio" name="dracos" id="rigar" value="rigar">
+                <label for="drogon">Rhaegal, Viserion y Drogon</label>
+                <input type="radio" name="dracos" id="drogon" value="drogon">
+                <label for="rhaegal">Grey Wind</label>
+                <input type="radio" name="dracos" id="rhaegal" value="rhaegal">
+            </div>
+            <div>
+                <h2>¿Qué territorio gobierna la familia Martell?</h2>
+                <label for="storm">Stormlands</label>
+                <input type="radio" name="territorio" id="storm" value="storm">
+                <label for="dorne">Dorne</label>
+                <input type="radio" name="territorio" id="dorne" value="dorne">
+                <label for="crownlands">Crownlands</label>
+                <input type="radio" name="territorio" id="crownlands" value="crownlands">
+            </div>
+            <div>
+                <h2>¿Como muere <i>Khal Drogo</i>?</h2>
+                <label for="batalla">En una batalla</label>
+                <input type="radio" name="khal" id="batalla" value="batalla">
+                <label for="veneno">Por envenenamiento</label>
+                <input type="radio" name="khal" id="veneno" value="veneno">
+                <label for="asesina">Daenerys lo asesina</label>
+                <input type="radio" name="khal" id="asesina" value="asesina">
+            </div>
+            <div>
+                <h2>¿Que significa <i>Valar Morghulis</i>?</h2>
+                <label for="morir">Todos los hombres deben morir</label>
+                <input type="radio" name="valar" id="morir" value="morir">
+                <label for="servir">Todos los hombres deben servir</label>
+                <input type="radio" name="valar" id="servir" value="servir">
+                <label for="vivir">Todos los hombres deben vivir</label>
+                <input type="radio" name="valar" id="vivir" value="vivir">
+            </div>
+            <input type="submit" name="Enviar" class="enviar">
+        </form>
+    </article>
+    <footer class="pie">
+        <a href=""><img src="imagenes/instagram.png" alt="instagram"></a>
+        <a href=""><img src="imagenes/twitter.png" alt="twitter"></a>
+        <a href=""><img src="imagenes/facebook.png" alt="facebook"></a>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("navegador");
+            if (x.className === "") {
+                x.className += "responsive";
+            } 
+            else {
+                x.className = "barratop";
+            }
+        }
+    </script>
+</body>
+</html>

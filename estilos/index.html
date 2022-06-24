@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/lightbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="contiene">
+        <header class= "cabecera">        
+            <a href="index.html"><img src="imagenes/logogot2.png" alt="logo got"></a>
+        </header>
+        <nav id="navegador">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <ul>
+                <li class="lista"><a href="index.html">Home</a></li>
+                <li class="lista"><a href="personajes.html" id="pj">Personajes</a></li>
+                <li class="lista"><a href="galeria.html">Galeria</a></li>
+                <li class="lista"><a href="quiz.html">Quiz</a></li>
+                <li class="lista"><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li class="lista"><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <article class="articulo">
+            <div>
+                <h1>"Nunca olvides lo que eres, y el resto del mundo no lo hara. Llevalo como una armadura y nunca lo usaran para herirte"</h1>
+                <small>Tyrion Lannister</small>
+            </div>
+        </article>
+        <section class="seccion">
+            <div>
+                <img src="imagenes/tyrion-lannister.webp" alt="Tyrion Lannister">
+                <h3>En un mundo fantastico y en un contexto medieval varias familias, relativas a la nobleza, se disputan el poder para dominar el territorio ficticio de Poniente (Westeros) y tomar el control de los Siete Reinos desde el Trono de Hierro, lugar donde el rey ejerce el poder.<br>
+                    Mientras tiene lugar una guerra civil para conseguir el poder, detras del Muro que divide el reino de Poniente y la zona norte, los muertos amenazan con librar la batalla contra los vivos. <br> Entretanto, Daenerys Targaryen, la hija del antiguo rey, regresa a Poniente para reclamar su lugar y así vengar el deceso de sus ascendientes en la guerra civil anterior.
+                </h3>
+            </div>
+            <div class="jon">
+                <h3>Game of Thrones es una serie de televisión de drama y fantasía medieval desarrollada por David Benioff y D. B. Weiss y producida por la cadena HBO. Su argumento está inspirado en la serie de novelas Canción de hielo y fuego, escrita por el estadounidense George R. R. Martin. <br>
+                    Game of Thrones es una de las series más costosas de todos los tiempos. La producción del episodio piloto requirió entre cinco a diez millones de dolares, y el importe de la primera temporada completa osciló en un rango de 50 y 60 millones de dolares. <br>
+                    ‘Game of Thrones’ se aseguró un nuevo récord en su última participación en los premios Emmy. La serie épica, que en 2018 se despidió tras ocho temporadas, recibió 32 nominaciones, una cifra sin precedentes para la historia de los galardones que entrega la Academia de Televisión de Estados Unidos.</h3>
+                <img src="imagenes/jhon-snow.jpg" alt="Jhon Snow">
+            </div>
+        </section>
+    </main>
+        <footer class="pie">
+            <a href=""><img src="imagenes/instagram.png" alt="instagram"></a>
+            <a href=""><img src="imagenes/twitter.png" alt="twitter"></a>
+            <a href=""><img src="imagenes/facebook.png" alt="facebook"></a>
+        </footer>
+        <script type="text/javascript">
+            function myFunction() {
+                var x = document.getElementById("navegador");
+                if (x.className === "") {
+                    x.className += "responsive";
+                } 
+                else {
+                    x.className = "barratop";
+                }
+            }
+        </script>
+</body>
+</html>

@@ -167,9 +167,65 @@ footer img{
     padding: 5px;
 }
 
-.personajes p{
-    margin: 10px 5px;
-    
+.personajes .pjs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personajes .pjs img{
+    width: 35%;
+    height: 250px;
+}
+
+.personajes h2{
+    padding-right: 5%;
+}
+
+.qui form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.qui form div{
+    margin: 30px auto;
+    margin-left: 30%;
+}
+
+.qui form .enviar {
+    padding: 10px;
+}
+
+.qui form .enviar:hover {
+    background-color: grey;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.qui form h2{
+    display: block;
+}
+
+.qui form input{
+    margin: 20px 15px 50px 5px;
+}
+
+.nos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nos div{
+    width: 50%;
+    margin: 50px 0;
+}
+
+.nos div h2{
+    margin-bottom: 10px;
 }
 
 .galeria{
@@ -188,8 +244,33 @@ footer img{
 }
 
 .formulario{
-    text-align: center;
-    float:inline-end ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #807060;
+    width: 50%;
+    border: solid black 3px;
+}
+
+.formulario form{
+    padding: 50px;
+}
+
+.formulario form label, input{
+    margin: 10px auto;
+}
+
+.formulario form input{
+    width: 80%;
+}
+
+.formulario form .msj{
+    height: 100px;
+}
+
+.formulario form .boton{
+    width: 20%;
 }
 
 .personajes .pjs{
@@ -218,6 +299,7 @@ nav.responsive ul {
 nav.responsive ul li {
     display: block;             /*MENU HAMBURGUESA*/
     text-align: center;
+    justify-content: center;
     padding: 0.5rem;
 }    
 nav.responsive ul li a {

@@ -14,52 +14,62 @@
 </head>
 <body>
     <section class="contiene">
-        <header class= "cabecera">  
+        <header class= "cabecera">        
             <a href="index.html"><img src="imagenes/logogot2.png" alt="logo got"></a>
-            <nav>
-                <ul class="menu">
-                    <li class="lista"><a href="index.html">Home</a></li>
-                    <li class="lista"><a href="personajes.html">Personajes</a></li>
-                    <li class="lista"><a href="galeria.html">Galeria</a></li>
-                    <li class="lista"><a href="resenas.html">Criticas y opiniones</a></li>
-                    <li class="lista"><a href="contacto.html">Contactanos</a></li>
-                </ul>
-            </nav>
         </header>
+        <nav id="navegador">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <ul>
+                <li class="lista"><a href="index.html">Home</a></li>
+                <li class="lista"><a href="personajes.html" id="pj">Personajes</a></li>
+                <li class="lista"><a href="galeria.html">Galeria</a></li>
+                <li class="lista"><a href="quiz.html">Quiz</a></li>
+                <li class="lista"><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li class="lista"><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
     </section>
     <div class="personajes">
         <h1 class="titulos">Personajes</h1>
         <div class="pjs">
             <h2>Tyrion Lannister</h2>
             <p>Es hijo de Tywin Lannister, el señor más rico de los Siete Reinos, y hermano menor de Jaime Lannister y Cersei Lannister. Por ser enano, Tyrion es considerado una vergüenza par su familia y el hecho de que su madre haya muerto durante su nacimiento le valió el rechazo de su padre. Tyrion siempre compensó su baja estatura con su inteligencia y sabiduría.</p>
+            <img src="imagenes/tyrion pjs.webp" alt="Tyrion Lannister" class="imgpj">
         </div>
         <div class="pjs">
             <h2>Jon Snow</h2>
             <p>Jon Snow es el hijo bastardo de Eddard “Ned” Stark. Si bien su origen es un misterio durante las primeras temporadas de la serie, Jon logra convertirse en uno de los personajes más relevantes de la historia. Tiene un lobo huargo llamado ‘Ghost’.</p>
+            <img src="imagenes/jonsnowpjs.jpg" alt="Jon Snow" class="imgpj">
         </div>
         <div class="pjs">
             <h2>Daenerys Targaryen</h2>
             <p>Daenerys Targaryen es princesa de la Casa Targaryen, la hija menor del rey Aerys II Targaryen. Tras la Guerra del Usurpador, en la que murieron su padre y su hermano mayor Rhaegar, ella y su hermano Viserys vivieron en el exilio; luego es obligada a casarse con Khal Drogo, de quien termina enamorada y convirtiéndose en la madre de los dragones.</p>
+            <img src="imagenes/daeneryspjs.jpg" alt="Daenerys Targaryen" class="imgpj">
         </div>
         <div class="pjs">
             <h2>Arya Stark</h2>
             <p>Arya Stark es la hija menor de Eddard Stark y Catelyn Stark; hermana de Robb, Bran, Rickon y Sansa Stark. Su medio hermano es Jon Snow. La vida de Arya cambia por completo después de una tragedia y se convierte en una gran guerrera.</p>
+            <img src="imagenes/aryapjs.webp" alt="Arya Stark" class="imgpj">
         </div>
         <div class="pjs">
             <h2>Cersei Lannister</h2>
             <p>Cersei Lannister es la reina de los Siete Reinos. Se casó con el rey Robert Baratheon y tuvo tres hijos, Joffrey, Myrcella y Tommen. Mantuvo una relación muy cercana con su hermano gemelo Jaime Lannister y despreció a su hermano menor Tyrion Lannister.</p>
+            <img src="imagenes/cerceipjs.jpg" alt="Cercei Lannister" class="imgpj">
         </div>
         <div class="pjs">
             <h2>Jaime Lannister</h2>
             <p>Jaime Lannister es el hermano mellizo de Cersei Lannister y hermano mayor de Tyrion Lannister. Siempre fue el favorito de su padre y durante mucho tiempo llevó la capa de Lord Comandante de la Guardia Real en Desembarco del Rey.</p>
+            <img src="imagenes/jaimiepjs.webp" alt="Jaime Lannister" class="imgpj">
         </div>
         <div class="pjs">
             <h2>Melissandre</h2>
             <p>Mejor conocida como “La Bruja Roja”, es una sacerdotisa de Asshai. Ella cree que sus visiones la llevarán al verdadero Rey de Westeros. Posee poderes proféticos y siempre se muestra misteriosa, serena y poderosa.</p>
+            <img src="imagenes/melisandrepjs.jpg" alt="Melisandre" class="imgpj">
         </div>
         <div class="pjs">
             <h2>Caminantes Blancos</h2>
             <p>Más allá del Muro viven los Caminantes Blancos, muertos vivientes, difíciles de exterminar y quienes causarán muchos problemas mientras los demás personajes intentan conquistar el Trono de Hierro.</p>
+            <img src="imagenes/caminantespjs.jpg" alt="Caminantes Blancos" class="imgpj">
         </div>
     </div>
     <footer class="pie">
@@ -67,7 +77,16 @@
         <a href=""><img src="imagenes/twitter.png" alt="twitter"></a>
         <a href=""><img src="imagenes/facebook.png" alt="facebook"></a>
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("navegador");
+            if (x.className === "") {
+                x.className += "responsive";
+            } 
+            else {
+                x.className = "barratop";
+            }
+        }
+    </script>
 </body>
-<script src="/js/lightbox-plus-jquery.js"></script>
-<script src="/js/lightbox.js"></script>
 </html>
