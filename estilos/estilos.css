@@ -101,11 +101,13 @@ nav ul li a:hover{
 
 .seccion div img{
     width: 50%;
+    object-fit: cover;
 }
 
 .seccion .jon img{
     height: 500px;
     width: 45%;
+    object-fit: cover;
 }
 
 .seccion div h3{
