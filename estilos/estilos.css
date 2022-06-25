@@ -1,11 +1,10 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
 body{
     font-family: 'Medievalsharp', cursive;
-    max-width: 1300px;
 }
 
 .contiene{
