@@ -285,82 +285,139 @@ footer img{
      display: none;
  }
  
-            /*RESPONSIVE*/
- @media screen and (max-width:480px) {   
-.icon {display: flex; width: 100%; color: white; justify-content: flex-end; margin: 5px;}
-.icon:hover{color: #808080;}
-nav{
-    display: flex;
-    flex-direction: column ;
-}
-nav ul {
-    display: none;    
-}
-nav.responsive ul {
-    display: block;    
-}
-nav.responsive ul li {
-    display: block;             /*MENU HAMBURGUESA*/
-    text-align: center;
-    justify-content: center;
-    padding: 0.5rem;
-}    
-nav.responsive ul li a {
-    padding-right: 0;    
-}
-.contiene{
-    max-width: 480px;       /*ARREGLAR IMAGEN CABECERA*/
-    max-height: 150px;
-}
-header img{
-    margin-left: 10%;
-}
-.articulo{
-    max-width: 480px;
-    width: 90%;
-    margin: 15px auto 0;
-}
-.articulo h1{
-    width: 100%;
-    margin: auto;
-}
-.articulo small{
-    margin-right: 5%;
-}
-.seccion{
-    display: flex;
-    flex-direction: column;
-    max-width: 480px;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-}
-
-.seccion div{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.seccion div img{
-    width: 90%;
-    height: 85%;
-    margin: auto;
-}
-
-.seccion div h3{
-    width: 90%;
-    
-}
-
-.pie{
-    display: flex;
-    margin-top: 2%;
-    margin: auto;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
+    /*RESPONSIVE*/
+    @media screen and (max-width:480px) {   
+        .icon {display: flex; width: 100%; color: white; justify-content: flex-end; margin: 5px;}
+        .icon:hover{color: #808080;}
+        nav{
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul {
+            display: none;    
+        }
+        nav.responsive ul {
+            display: block;    
+        }
+        nav.responsive ul li {
+            display: block;             /*MENU HAMBURGUESA*/
+            text-align: center;
+            justify-content: center;
+            padding: 0.5rem;
+        }    
+        nav.responsive ul li a {
+            padding-right: 0;    
+        }
+        #navegacion{
+            height: 200px;
+        }
+        .contiene{
+            max-width: 480px;       /*ARREGLAR IMAGEN CABECERA*/
+            max-height: 150px;
+        }
+        header img{
+            margin-left: 10%;
+        }
+        .articulo{
+            max-width: 480px;
+            width: 90%;
+            margin: 15px auto 0;
+        }
+        .articulo h1{
+            width: 100%;
+            margin: auto;
+        }
+        .articulo small{
+            margin-right: 5%;
+        }
+        .seccion{
+            display: flex;
+            flex-direction: column;
+            max-width: 480px;
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .seccion div{
+            max-width: 480px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .seccion div img{
+            width: 100%;
+            margin: 5% auto;
+        }
+        
+        .seccion div h3{
+            width: 90%;
+            margin-top: 5%;
+            
+        }
+        .gale{
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+        .gale a{
+            margin: auto;
+        }
+        .gale img{
+            width: 100%;
+        }
+        .pie{
+            display: flex;
+            margin-top: 2%;
+            margin: auto;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .qui {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 480px;
+            width: 100%;
+        }
+        .personajes{
+            display: flex;
+            flex-direction: column;
+            max-width: 480px;
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        .personajes div{
+            max-width: 480px;
+            width: 100%;
+            flex-direction: column;
+        }
+        
+        .personajes div img{
+            margin: 5% auto;
+        }
+        
+        .personajes div h2{
+            width: 100%;
+            margin: auto;
+        }
+        
+        .personajes div p{
+            width: 100%;
+            margin: 5% auto;
+        }
+        
+        .formulario{
+            max-width: 480px;
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        
 }
